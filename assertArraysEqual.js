@@ -18,6 +18,8 @@ const assertArraysEqual = function (arrA, arrB) {
     console.log(`💥 Arrays Failed: ${arrA} ≠ ${arrB}`);
   }
 };
+//assertArraysEqual
+
 
 // TEST CODE
 assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 4]), true);
