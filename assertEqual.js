@@ -5,6 +5,7 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑 Failed: ${actual} ≠ ${expected}`);
   }
 };
+// assertEqual
 
 // TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp"); // fail
