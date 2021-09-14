@@ -44,3 +44,14 @@ const things = ["hello", "world", "lighthouse", "students"];
 without(things, ["students", "hello"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 assertArraysEqual(things, ["world", "lighthouse"]);
+
+
+// const without = function(src, itr) {
+//   let arr = [];
+//   for(let i = 0; i < src.length; i++) {
+//         if(!itr.includes(src[i])) {
+//           arr.push(src[i]);
+//         }
+//     }
+//     return arr;
+// };
