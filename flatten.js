@@ -24,10 +24,13 @@ const flatten = function(arr) {
   if (!Array.isArray(arr)){
     return false;
   }
-  return arr.flat();
+  return arr.flat(Infinity);
 };
 
 
 //TEST CODE
 console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
 console.log(flatten("not an array")) // => [1, 2, 3, 4, 5, 6]
+
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+assertArraysEqual(flatten([[1, 2, [3, 4], 5, [6]]]), [1, 2, 3, 4, 5, 6]);

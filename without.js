@@ -21,13 +21,13 @@ const assertArraysEqual = function(arrA, arrB) {
 //assertArraysEqual
 
 const without = function(src, itr) {
-  let newArr = [];
-  for (let i = 0; i < src.length; i++) {
-    if (itr[i] !== src[i]) {
-      newArr.push(src[i]);
+  let arr = [];
+  for(let i = 0; i < src.length; i++) {
+        if(!itr.includes(src[i])) {
+          arr.push(src[i]);
+        }
     }
-  }
-  return newArr;
+    return arr;
 };
 
 //TEST CODE
@@ -45,13 +45,12 @@ without(things, ["students", "hello"]); // no need to capture return value for t
 // Make sure the original array was not altered by the without function
 assertArraysEqual(things, ["world", "lighthouse"]);
 
-
 // const without = function(src, itr) {
-//   let arr = [];
-//   for(let i = 0; i < src.length; i++) {
-//         if(!itr.includes(src[i])) {
-//           arr.push(src[i]);
-//         }
+//   let newArr = [];
+//   for (let i = 0; i < src.length; i++) {
+//     if (itr[i] !== src[i]) {
+//       newArr.push(src[i]);
 //     }
-//     return arr;
+//   }
+//   return newArr;
 // };
