@@ -25,10 +25,6 @@ const countLetters = function(str) {
 
 
 // TEST CODE
-// countLetters("crocodile");
-// console.log(countLetters("crocodile"));
-// console.log(countLetters("LHL"));
 
-assertEqual(countLetters('LHL', { L: 2, H: 1 }), true);
-// const output = countLetters(word, { "c": 2, "r": 1, "o": 2, "c": 2, "o": 2, "d": 1, "i": 1, "l": 1, "e": 1 });
-// assertEqual(output["c"], 2);
+console.log(countLetters("crocodile"));
+console.log(countLetters("LHL"));
