@@ -15,8 +15,3 @@ describe("#tail", () => {
     assert.deepEqual(tail([10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]), [10]);
   });
 });
-
-// // TEST CODE
-// const words = ["Yo Yo", "Lighthouse", "Labs"];
-// tail(words);
-// assertEqual(words.length, 3);

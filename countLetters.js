@@ -28,3 +28,5 @@ const countLetters = function(str) {
 
 console.log(countLetters("crocodile"));
 console.log(countLetters("LHL"));
+
+module.exports = countLetters;

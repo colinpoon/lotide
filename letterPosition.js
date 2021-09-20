@@ -1,3 +1,5 @@
+const { letterPosition } = require(".");
+
 const eqArrays = function(arrA, arrB) {
   if (arrA.length !== arrB.length) {
     return false;
@@ -37,3 +39,5 @@ console.log(letterPositions("lighthouse in the house"));
 
 console.log(letterPositions('hello'))
 assertArraysEqual(letterPositions('hello').e, [1])
+
+module.exports = letterPositions;
