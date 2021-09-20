@@ -15,7 +15,6 @@ const findKey = function(obj, cb) {
     }
 };
 
-
 // TEST CODE
 findKey({
   "Blue Hill": { stars: 1 },

@@ -20,14 +20,6 @@ const assertArraysEqual = function (arrA, arrB) {
 };
 //assertArraysEqual
 
-// const letterPosition = function(sntn) {
-//   const result = {};
-//   for (let i = 0; i <sntn.length; i++){
-//     if ()
-//   }
-//   return result;
-// };
-
 const letterPositions = function(sntn) {
   const result = {};
   sntn = sntn.replace(/\s/g, "");
@@ -43,5 +35,5 @@ const letterPositions = function(sntn) {
 
 console.log(letterPositions("lighthouse in the house"));
 
-// console.log(letterPosition('hello'))
-// assertArraysEqual(letterPosition('hello').e, [1])
+console.log(letterPositions('hello'))
+assertArraysEqual(letterPositions('hello').e, [1])
